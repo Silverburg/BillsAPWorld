@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
-from .constants import GAME_NAME, CLASSIFICATION
+from .constants import GAME_NAME, CLASSIFICATION, AMOUNT
 from .data.data_items import *
 
 from BaseClasses import Item, ItemClassification
@@ -19,10 +19,23 @@ def get_random_filler_item_name(world: BillsAPWorld) -> str:
     return FILLER
 
 def create_all_items(world: BillsAPWorld) -> None:
-    itempool = [world.create_item(item) for item, values in ITEM_LIST.items() if values[CLASSIFICATION] not in(ItemClassification.filler, ItemClassification.trap)]
+    itempool = []
+    for item in filter(lambda item: ITEM_LIST[item][CLASSIFICATION] not in (ItemClassification.filler, ItemClassification.trap), ITEM_LIST.keys()):
+        if AMOUNT in ITEM_LIST[item]:
+            for i in range(ITEM_LIST[item][AMOUNT]):
+                print(f"Adding item: {item}")
+                itempool.append(world.create_item(item, i))
+            else:
+                print(f"Adding item: {item}")
+                itempool.append(world.create_item(item))
+
+    print(itempool)
 
     needed_filler = len(world.multiworld.get_unfilled_locations(world.player)) - len(itempool)
     itempool += [world.create_filler() for _ in range(needed_filler)]
+
+    print("----")
+    print(itempool)
 
     world.multiworld.itempool += itempool
 

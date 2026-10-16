@@ -19,11 +19,11 @@ def set_all_entrance_rules(world: BillsAPWorld) -> None:
     pass
 
 def set_all_location_rules(world: BillsAPWorld) -> None:
-    location_3 = world.get_location("Location 3")
-    world.set_rule(location_3, Has(ITEM_1))
+    location_3 = world.get_location("PIG_3")
+    world.set_rule(location_3, Has(PROG_PIG,1))
 
-    location_5 = world.get_location("Location 5")
-    world.set_rule(location_5, Has(ITEM_2))
+    location_5 = world.get_location("PIG_5")
+    world.set_rule(location_5, Has(PROG_PIG,2))
 
 def set_completion_condition(world: BillsAPWorld) -> None:
-    world.set_completion_rule(Has(ITEM_3))
+    world.set_completion_rule(Has(PROG_PIG,3))
