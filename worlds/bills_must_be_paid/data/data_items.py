@@ -1,5 +1,4 @@
 from BaseClasses import ItemClassification
-from ..constants import *
 
 PROG_PIG = "Progressive Piggy"
 PROG_HAM = "Progressive Hammer"
@@ -7,6 +6,10 @@ PROG_ACC = "Progressive Accessory"
 
 FILLER = "Filler"
 TRAP = "Trap"
+
+ID_KEY = "id_key"
+CLASSIFICATION = "classification"
+AMOUNT = "amount"
 
 ITEM_LIST = {
     PROG_PIG: {
@@ -21,7 +24,7 @@ ITEM_LIST = {
     },
     PROG_ACC: {
         ID_KEY: 3,
-        CLASSIFICATION: ItemClassification.progression,
+        CLASSIFICATION: ItemClassification.filler,
         AMOUNT: 2
     },
     FILLER: {

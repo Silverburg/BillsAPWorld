@@ -2,9 +2,9 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from BaseClasses import ItemClassification, Location
-from .data.data_locations import LOCATION_LIST
+from .data.data_locations import *
 from .data.data_regions import *
-from .constants import GAME_NAME, ID_KEY
+from .constants import GAME_NAME
 
 from . import items
 
