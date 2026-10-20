@@ -35,9 +35,9 @@ class BillsAPWorld(World):
     def create_items(self) -> None:
         items.create_all_items(self)
 
-    def create_item(self, name: str, amount: str = 1) -> items.BillsAPItem:
+    def create_item(self, name: str) -> items.BillsAPItem:
             item = ITEM_LIST[name]
-            return items.BillsAPItem(name, item[CLASSIFICATION], item[ID_KEY]+amount*100, self.player)
+            return items.BillsAPItem(name, item[CLASSIFICATION], item[ID_KEY], self.player)
 
     def get_filler_item_name(self) -> str:
         return items.get_random_filler_item_name(self)

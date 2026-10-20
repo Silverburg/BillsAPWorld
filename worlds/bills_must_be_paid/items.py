@@ -24,10 +24,10 @@ def create_all_items(world: BillsAPWorld) -> None:
         if AMOUNT in ITEM_LIST[item]:
             for i in range(ITEM_LIST[item][AMOUNT]):
                 print(f"Adding item: {item}")
-                itempool.append(world.create_item(item, i))
-            else:
-                print(f"Adding item: {item}")
                 itempool.append(world.create_item(item))
+        else:
+            print(f"Adding item: {item}")
+            itempool.append(world.create_item(item))
 
     print(itempool)
 
