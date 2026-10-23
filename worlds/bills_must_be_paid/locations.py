@@ -22,7 +22,7 @@ def create_all_locations(world: BillsAPWorld) -> None:
     create_events(world)
 
 def create_regular_locations(world: BillsAPWorld) -> None:
-    main_area = world.get_region(MAIN_AREA)
+    main_area = world.get_region(PHASE_1)
 
     for location, values in LOCATION_LIST.items():
         loc = BillsAPLocation(world.player, location, values[ID_KEY], main_area)

@@ -4,7 +4,7 @@ from typing import Any
 from worlds.AutoWorld import World
 from .data.data_locations import *
 from .data.data_items import *
-from .data.data_regions import MAIN_AREA
+from .data.data_regions import *
 
 from . import items, locations, regions, rules, web_world, constants
 from . import options as billsap_options
@@ -23,7 +23,7 @@ class BillsAPWorld(World):
     location_name_to_id = {name: values[ID_KEY] for name, values in LOCATION_LIST.items()}
     item_name_to_id = {name: values[ID_KEY] for name, values in ITEM_LIST.items()}
 
-    origin_region_name = MAIN_AREA
+    origin_region_name = PHASE_1
 
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)

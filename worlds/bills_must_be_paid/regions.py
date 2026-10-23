@@ -12,7 +12,7 @@ def create_and_connect_regions(world: BillsAPWorld) -> None:
     connect_regions(world)
 
 def create_all_regions(world: BillsAPWorld) -> None:
-    main_area = Region(MAIN_AREA, world.player, world.multiworld)
+    main_area = Region(PHASE_1, world.player, world.multiworld)
 
     regions = [main_area]
 

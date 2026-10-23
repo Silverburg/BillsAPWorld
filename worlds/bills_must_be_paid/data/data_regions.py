@@ -1,5 +1,5 @@
-MAIN_AREA = "Main Area"
+PHASE_1 = "Phase 1"
 
 REGION_LIST = [
-    MAIN_AREA
+    PHASE_1
     ]

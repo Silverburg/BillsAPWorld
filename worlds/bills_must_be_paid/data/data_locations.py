@@ -1,10 +1,12 @@
 LOC_TYPE = "location type"
 ID_KEY = "id_key"
+REGION = "region"
 
-LOCATION_LIST = {
+LOCATION_PIGGIES = {
     "Unlock The Tourist": {
         ID_KEY: 1,
-        LOC_TYPE: "piggy"
+        LOC_TYPE: "piggy",
+        REGION: 1
         },
     "Unlock Woody": {
         ID_KEY: 2,
@@ -65,7 +67,10 @@ LOCATION_LIST = {
     "Unlock Trophy": {
         ID_KEY: 16,
         LOC_TYPE: "piggy"
-        },
+        }
+}
+
+LOCATION_BILLS = {
     "BILL_1": {
         ID_KEY: 17,
         LOC_TYPE: "bill"
@@ -83,3 +88,5 @@ LOCATION_LIST = {
         LOC_TYPE: "bill"
     }
 }
+
+LOCATION_LIST = LOCATION_PIGGIES | LOCATION_BILLS
