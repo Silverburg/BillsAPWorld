@@ -154,7 +154,7 @@ LOCATION_HAMMERS = {
         ID_KEY: 36,
         LOC_TYPE: "hammer"
     },
-	"Purchase Efficient Hammer": {
+	"Purchase Cross Peen Hammer": {
         ID_KEY: 37,
         LOC_TYPE: "hammer"
     },
@@ -162,20 +162,16 @@ LOCATION_HAMMERS = {
         ID_KEY: 38,
         LOC_TYPE: "hammer"
     },
-	"Purchase Cross Peen Hammer": {
+	"Purchase Heavy Hammer": {
         ID_KEY: 39,
         LOC_TYPE: "hammer"
     },
-	"Purchase Heavy Hammer": {
+    "Purchase Golden Hammer": {
         ID_KEY: 40,
         LOC_TYPE: "hammer"
     },
 	"Purchase Spiked Hammer": {
         ID_KEY: 41,
-        LOC_TYPE: "hammer"
-    },
-	"Purchase Golden Hammer": {
-        ID_KEY: 42,
         LOC_TYPE: "hammer"
     }
 }
