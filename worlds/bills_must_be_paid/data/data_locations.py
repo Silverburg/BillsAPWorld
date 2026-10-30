@@ -71,21 +71,112 @@ LOCATION_PIGGIES = {
 }
 
 LOCATION_BILLS = {
-    "BILL_1": {
+	"Pay Water Bill": {
         ID_KEY: 17,
         LOC_TYPE: "bill"
     },
-    "BILL_2": {
+	"Pay Cable Bill": {
         ID_KEY: 18,
         LOC_TYPE: "bill"
     },
-    "BILL_3": {
+	"Pay Air Conditioner Bill": {
         ID_KEY: 19,
         LOC_TYPE: "bill"
     },
-    "BILL_4": {
+	"Pay Rent Bill": {
         ID_KEY: 20,
         LOC_TYPE: "bill"
+    },
+	"Pay Electric Bill": {
+        ID_KEY: 21,
+        LOC_TYPE: "bill"
+    },
+	"Pay Car Bill": {
+        ID_KEY: 22,
+        LOC_TYPE: "bill"
+    },
+	"Pay Plumber Bill": {
+        ID_KEY: 23,
+        LOC_TYPE: "bill"
+    },
+	"Pay Credit Card Bill": {
+        ID_KEY: 24,
+        LOC_TYPE: "bill"
+    },
+	"Pay Parking Ticket Bill": {
+        ID_KEY: 25,
+        LOC_TYPE: "bill"
+    },
+	"Pay Student Loan Bill": {
+        ID_KEY: 26,
+        LOC_TYPE: "bill"
+    },
+	"Pay Bail Bond Bill": {
+        ID_KEY: 27,
+        LOC_TYPE: "bill"
+    },
+	"Pay Lawyer Bill": {
+        ID_KEY: 28,
+        LOC_TYPE: "bill"
+    },
+	"Pay Storage Unit Bill": {
+        ID_KEY: 29,
+        LOC_TYPE: "bill"
+    },
+	"Pay Coin Laundry Bill": {
+        ID_KEY: 30,
+        LOC_TYPE: "bill"
+    },
+	"Pay Accountant Bill": {
+        ID_KEY: 31,
+        LOC_TYPE: "bill"
+    },
+	"Pay Scratch Tickets Bill": {
+        ID_KEY: 32,
+        LOC_TYPE: "bill"
+    },
+	"Pay Farmland Bill": {
+        ID_KEY: 33,
+        LOC_TYPE: "bill"
+    },
+	"Pay Solar Panel Bill": {
+        ID_KEY: 34,
+        LOC_TYPE: "bill"
+    },
+	"Pay Farmhouse Bill": {
+        ID_KEY: 35,
+        LOC_TYPE: "bill"
+	}
+}
+
+LOCATION_HAMMERS = {
+	"Purchase Toy Hammer": {
+        ID_KEY: 36,
+        LOC_TYPE: "hammer"
+    },
+	"Purchase Efficient Hammer": {
+        ID_KEY: 37,
+        LOC_TYPE: "hammer"
+    },
+	"Purchase Ultra Crit Hammer": {
+        ID_KEY: 38,
+        LOC_TYPE: "hammer"
+    },
+	"Purchase Cross Peen Hammer": {
+        ID_KEY: 39,
+        LOC_TYPE: "hammer"
+    },
+	"Purchase Heavy Hammer": {
+        ID_KEY: 40,
+        LOC_TYPE: "hammer"
+    },
+	"Purchase Spiked Hammer": {
+        ID_KEY: 41,
+        LOC_TYPE: "hammer"
+    },
+	"Purchase Golden Hammer": {
+        ID_KEY: 42,
+        LOC_TYPE: "hammer"
     }
 }
 
